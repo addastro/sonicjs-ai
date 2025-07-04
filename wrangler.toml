@@ -17,7 +17,7 @@ ENVIRONMENT = "development"
 [[d1_databases]]
 binding = "DB"
 database_name = "sonicjs-dev"
-database_id = "874cad37-313c-4d71-97fa-ad7184526f5a"
+database_id = "a098ea4b-9eef-4041-a9a7-349a1e8b3331"
 
 # R2 Bucket for media storage
 [[r2_buckets]]
@@ -35,7 +35,7 @@ ENVIRONMENT = "preview"
 [[env.preview.d1_databases]]
 binding = "DB"
 database_name = "sonicjs-dev"
-database_id = "874cad37-313c-4d71-97fa-ad7184526f5a"
+database_id = "a098ea4b-9eef-4041-a9a7-349a1e8b3331"
 
 [[env.preview.r2_buckets]]
 binding = "MEDIA_BUCKET"
@@ -50,7 +50,7 @@ ENVIRONMENT = "production"
 [[env.production.d1_databases]]
 binding = "DB"
 database_name = "sonicjs-prod"
-database_id = "799a0481-a046-4047-bcc8-9d9b57fd777e"
+database_id = "e12b26eb-5a2e-4a80-8da2-90d50ab8073f"
 
 [[env.production.r2_buckets]]
 binding = "MEDIA_BUCKET"
