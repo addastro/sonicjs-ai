@@ -1,6 +1,6 @@
 name = "sonicjs"
 main = "src/index.ts"
-compatibility_date = "2025-06-01"
+compatibility_date = "2025-06-06"
 compatibility_flags = ["nodejs_compat"]
 
 [observability.logs]
