@@ -22,6 +22,8 @@ export interface CollectionsListPageData {
 export function renderCollectionsListPage(data: CollectionsListPageData): string {
   const tableData: TableData<Collection> = {
     tableId: 'collections-table',
+    rowClickable: true,
+    rowClickUrl: (collection: Collection) => `/admin/collections/${collection.id}`,
     columns: [
       {
         key: 'name',
@@ -64,9 +66,9 @@ export function renderCollectionsListPage(data: CollectionsListPageData): string
           if (!collection || !collection.id) return '<span class="text-gray-500">-</span>'
           return `
             <div class="flex items-center space-x-2">
-              <a href="/admin/collections/${collection.id}" class="inline-flex items-center px-3 py-1 text-sm leading-4 font-medium rounded-lg text-gray-300 bg-white/10 hover:bg-white/20 hover:text-white transition-colors border border-white/20">
+              <a href="/admin/collections/${collection.id}" class="inline-flex items-center px-3 py-1 text-sm leading-4 font-medium rounded-lg text-white bg-gradient-to-r from-green-500/20 to-blue-500/20 hover:from-green-500/30 hover:to-blue-500/30 transition-all border border-green-500/30">
                 <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path>
                 </svg>
                 Edit
               </a>
