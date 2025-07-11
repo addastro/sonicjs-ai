@@ -1,6 +1,6 @@
 name = "sonicjs-ai"
 main = "src/index.ts"
-compatibility_date = "2024-06-01"
+compatibility_date = "2025-06-01"
 compatibility_flags = ["nodejs_compat"]
 
 # Statický assets
@@ -11,13 +11,13 @@ binding = "ASSETS"
 [vars]
 ENVIRONMENT = "development"
 # Cloudflare Images configuration (optional)
-# IMAGES_ACCOUNT_ID = "your-account-id"
+# IMAGES_ACCOUNT_ID = "your-id"
 # CDN_DOMAIN = "media.yourdomain.com"
 
 [[d1_databases]]
 binding = "DB"
 database_name = "sonicjs-dev"
-database_id = "a098ea4b-9eef-4041-a9a7-349a1e8b3331"
+database_id = "474c839b-e107-44f6-a8c8-df03b63612fe"
 
 # R2 Bucket for media storage
 [[r2_buckets]]
@@ -35,7 +35,7 @@ ENVIRONMENT = "preview"
 [[env.preview.d1_databases]]
 binding = "DB"
 database_name = "sonicjs-dev"
-database_id = "a098ea4b-9eef-4041-a9a7-349a1e8b3331"
+database_id = "474c839b-e107-44f6-a8c8-df03b63612fe"
 
 [[env.preview.r2_buckets]]
 binding = "MEDIA_BUCKET"
@@ -50,7 +50,7 @@ ENVIRONMENT = "production"
 [[env.production.d1_databases]]
 binding = "DB"
 database_name = "sonicjs-prod"
-database_id = "e12b26eb-5a2e-4a80-8da2-90d50ab8073f"
+database_id = "e89894e1-00a2-44cd-97ea-bf8c5dafe2a0"
 
 [[env.production.r2_buckets]]
 binding = "MEDIA_BUCKET"
